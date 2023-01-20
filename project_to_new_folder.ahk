@@ -1,7 +1,17 @@
 ﻿; run on windows key + shift + a
 #+a::{
-    ; The outer folder in which project folders are stored
+    ; Save a copy of the current project in the PROJECTS subfolder
     ProjectFolder := "D:\SONGS\PROJECTS\"
+    SaveProject(ProjectFolder)
+}
+
+#+x::{
+    ; Save a copy of the current project in the IDEAS subfolder
+    ProjectFolder := "D:\SONGS\IDEAS\"
+    SaveProject(ProjectFolder)
+}
+
+SaveProject(ProjectFolder){
     IB := InputBox("Please enter the subfolder name within " ProjectFolder, "Enter Folder", "w640 h200")
 
     CoordMode "Mouse", "Client"
@@ -46,4 +56,3 @@
 
     }
 }
-
