@@ -5,6 +5,7 @@
     SaveProject(ProjectFolder)
 }
 
+; run on windows key + shift + x
 #+x::{
     ; Save a copy of the current project in the IDEAS subfolder
     ProjectFolder := "D:\SONGS\IDEAS\"
